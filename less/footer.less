@@ -1,6 +1,7 @@
-.background {
+footer {
   background-color: #f6f6f6;
   width: 100%;
+  height: 500px;
 }
 
 .bottom-nav {
@@ -8,6 +9,12 @@
   flex-direction: column;
   margin-left: 10%;
   padding-top: 100px;
+  @media @desktop {
+    margin: 0 auto;
+    width: 70vw;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .bottom-nav a {
@@ -15,11 +22,17 @@
   margin-bottom: 22px;
   text-decoration: none;
   color: black;
+  @media @desktop {
+    font-size: 24px;
+  }
 }
 
 .social {
   display: flex;
   flex-direction: column;
+  @media @desktop {
+    margin-bottom: 100px;
+  }
 }
 
 .f-divider {
@@ -30,6 +43,9 @@
 
   margin-top: 100px;
   margin-bottom: 22px;
+  @media @desktop {
+    width: 70vw;
+  }
 }
 
 .social-conatiner {
@@ -39,6 +55,9 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
+  @media @desktop {
+    width: 70vw;
+  }
 }
 
 .kin {
@@ -46,10 +65,17 @@
   text-decoration: none;
   color: black;
   flex-grow: 2;
+  @media @desktop {
+    font-size: 32px;
+    font-weight: bold;
+  }
 }
 
 .s-logos img {
   width: 30px;
   flex-grow: 1;
   margin-left: 12px;
+  @media @desktop {
+    width: 50px;
+  }
 }
