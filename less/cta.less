@@ -14,12 +14,25 @@
   left: 10%;
 }
 
+.top {
+  @media @desktop {
+    margin-top: 50px;
+  }
+}
+
+.top h2 {
+  width: 60%;
+}
+
 .cta-top h2 {
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
   font-weight: 600;
   font-size: 24px;
   text-align: left;
   color: white;
+  @media @desktop {
+    font-size: 32px;
+  }
 }
 
 .cta-top .button {
@@ -27,10 +40,13 @@
 }
 
 .cta-top-img {
-  // z-index: -1;
   object-fit: cover;
   width: 100vw;
   height: 400px;
+  @media @desktop {
+    width: 60vw;
+    border-radius: 6px;
+  }
 }
 
 .bottom {
