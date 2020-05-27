@@ -3,16 +3,39 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media @desktop {
+    flex-direction: row-reverse;
+  }
 }
-.hero h1 {
+
+.hero img {
+  width: 600px;
+  // height: 300px;
+}
+
+.info h1 {
   font-size: 32px;
   text-align: center;
   width: 220px;
+  @media @desktop {
+    width: 100%;
+    text-align: left;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 }
-.hero p {
+.info p {
   font-size: 18px;
   text-align: center;
   width: 260px;
+  @media @desktop {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    font-size: 20px;
+  }
 }
 .button {
   width: 120px;
@@ -21,4 +44,17 @@
   background-color: white;
   border-radius: 4px;
   font-size: 14px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media @desktop {
+    // justify-content: flex-start;
+    width: 380px;
+    align-items: flex-start;
+    margin-right: 50px;
+  }
 }

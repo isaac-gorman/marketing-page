@@ -181,7 +181,7 @@
 }
 /* Nav Bar Mobile */
 .body-container {
-  width: 90vw;
+  width: 100vw;
   margin: 0 auto;
   display: block;
   display: flex;
@@ -196,15 +196,41 @@
   justify-content: center;
   align-items: center;
 }
-.hero h1 {
+@media (min-width: 900px) {
+  .hero {
+    flex-direction: row-reverse;
+  }
+}
+.hero img {
+  width: 600px;
+}
+.info h1 {
   font-size: 32px;
   text-align: center;
   width: 220px;
 }
-.hero p {
+@media (min-width: 900px) {
+  .info h1 {
+    width: 100%;
+    text-align: left;
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+}
+.info p {
   font-size: 18px;
   text-align: center;
   width: 260px;
+}
+@media (min-width: 900px) {
+  .info p {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80%;
+    font-size: 20px;
+  }
 }
 .button {
   width: 120px;
@@ -213,6 +239,19 @@
   background-color: white;
   border-radius: 4px;
   font-size: 14px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .info {
+    width: 380px;
+    align-items: flex-start;
+    margin-right: 50px;
+  }
 }
 .cta-top {
   margin-top: 100px;
