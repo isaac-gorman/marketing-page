@@ -14,11 +14,79 @@
 }
 /* Header  */
 /* Nav Bar */
-.lang {
+.lang-m {
   width: 35px;
+}
+@media (min-width: 900px) {
+  .lang-m {
+    display: none;
+  }
+}
+.lang-d {
+  display: none;
+}
+@media (min-width: 900px) {
+  .lang-d {
+    display: block;
+    width: 35px;
+  }
+}
+.lang-d img {
+  display: none;
+}
+@media (min-width: 900px) {
+  .lang-d img {
+    display: block;
+  }
 }
 .logo {
   font-size: 1.1rem;
+}
+@media (min-width: 900px) {
+  .logo {
+    display: none;
+  }
+}
+.desk-left {
+  display: none;
+}
+@media (min-width: 900px) {
+  .desk-left {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+  }
+}
+@media (min-width: 900px) {
+  .d-logo {
+    margin-right: 60px;
+    font-weight: 700;
+    font-size: rem;
+  }
+}
+@media (min-width: 900px) {
+  .desk-left a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+  }
+}
+.desk-right {
+  display: none;
+}
+@media (min-width: 900px) {
+  .desk-right {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+  }
+}
+@media (min-width: 900px) {
+  .lang-container-d {
+    margin-right: 40px;
+  }
 }
 .nav-top {
   display: flex;
@@ -27,10 +95,42 @@
   height: 100px;
   z-index: 1;
 }
+@media (min-width: 900px) {
+  .nav-top {
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+.nav-top a {
+  display: none;
+}
+@media (min-width: 900px) {
+  .nav-top a {
+    display: block;
+  }
+}
+.nav-top .button {
+  display: none;
+}
+@media (min-width: 900px) {
+  .nav-top .button {
+    display: block;
+  }
+}
+@media (min-width: 900px) {
+  .container {
+    display: none;
+  }
+}
 .container .menu-icon {
   color: #3b3b3b;
   cursor: pointer;
   z-index: 2;
+}
+@media (min-width: 900px) {
+  .container .menu-icon {
+    display: none;
+  }
 }
 .menu-icon {
   font-size: 35px;
@@ -45,6 +145,11 @@
   background-color: #3b3b3b;
   overflow: hidden;
   transition: 1s ease-in-out;
+}
+@media (min-width: 900px) {
+  .menu-container {
+    display: none;
+  }
 }
 .menu-content {
   position: relative;

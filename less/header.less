@@ -21,13 +21,78 @@
 
 /* Nav Bar */
 
-.lang {
+.lang-m {
   width: 35px;
+  @media @desktop {
+    display: none;
+  }
 }
 
-.logo {
-  font-size: 1.10rem;
+.lang-d {
+  display: none;
+  @media @desktop {
+    display: block;
+    width: 35px;
+  }
 }
+
+.lang-d img {
+  display: none;
+  @media @desktop {
+    display: block;
+  }
+}
+.logo {
+  font-size: 1.1rem;
+  @media @desktop {
+    display: none;
+  }
+}
+
+.desk-left {
+  display: none;
+  @media @desktop {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+  }
+}
+
+.d-logo{
+  @media @desktop{
+    margin-right: 60px;
+    font-weight: 700;
+    font-size: rem;
+  }
+}
+
+.desk-left a{
+  @media @desktop{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+
+
+.desk-right {
+  display: none;
+  @media @desktop {
+    display: block;
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+  }
+}
+
+.lang-container-d{
+  @media @desktop {
+    margin-right: 40px;
+  }
+}
+
 
 .nav-top {
   display: flex;
@@ -35,13 +100,45 @@
   align-items: center;
   height: 100px;
   z-index: 1;
+
+  @media @desktop {
+    // width: 100vw;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
 }
+
+.nav-top a {
+  display: none;
+  @media @desktop {
+    display: block;
+    // flex-grow: 1;
+  }
+}
+
+.nav-top .button {
+  display: none;
+  @media @desktop {
+    display: block;
+  }
+}
+
+.container{
+  @media @desktop {
+    display: none;
+   }
+}
+
 
 .container .menu-icon {
   color: #3b3b3b;
 
   cursor: pointer;
   z-index: 2;
+
+  @media @desktop {
+    display: none;
+  }
 }
 
 .menu-icon {
@@ -60,6 +157,9 @@
 
   overflow: hidden;
   transition: 1s ease-in-out;
+  @media @desktop {
+   display: none;
+  }
 }
 
 .menu-content {
