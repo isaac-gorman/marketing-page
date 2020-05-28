@@ -339,6 +339,7 @@ input {
   }
 }
 label {
+  font-family: 'product_sansbold';
   margin-top: 20px;
   font-size: 16px;
   color: #2d2e32;
@@ -371,6 +372,9 @@ select {
     background-color: white;
     color: #2d2e32;
   }
+}
+option {
+  color: #2d2e32;
 }
 .send {
   margin-top: 40px;
