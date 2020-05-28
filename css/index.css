@@ -1,7 +1,7 @@
 /* Header Mobile  */
 .header-mobile {
   width: 100vw;
-  margin: 0 auto;
+  margin: 0;
   height: 100px;
   background-color: white;
   position: fixed;
@@ -40,6 +40,7 @@
   }
 }
 .logo {
+  font-family: 'product_sansbold';
   font-size: 1.1rem;
 }
 @media (min-width: 900px) {
@@ -55,6 +56,7 @@
     display: block;
     display: flex;
     flex-direction: row;
+    align-items: center;
     margin-left: 40px;
   }
 }
@@ -62,14 +64,20 @@
   .d-logo {
     margin-right: 60px;
     font-weight: 700;
-    font-size: rem;
+  }
+  .d-logo .d-logo-font {
+    color: black;
+    font-size: 24px;
+    font-family: 'product_sansbold';
   }
 }
 @media (min-width: 900px) {
   .desk-left a {
+    font-family: 'product_sanslight';
     margin-right: 20px;
     text-decoration: none;
-    color: black;
+    color: #3f3e3e;
+    font-size: 16px;
   }
 }
 .desk-right {
@@ -164,7 +172,6 @@
   font-size: 24px;
   color: white;
   display: block;
-  font-family: 'airbnb_cereal_appmedium';
   transition: 0.3s ease-in-out;
 }
 .menu-content a:hover {
@@ -190,6 +197,10 @@
   align-items: center;
   margin-top: 200px;
 }
+.button {
+  font-family: 'product_sansregular';
+  color: black;
+}
 .hero {
   display: flex;
   flex-direction: column;
@@ -200,7 +211,7 @@
   .hero {
     flex-direction: row-reverse;
     width: 70vw;
-    height: 500px;
+    height: 50vh;
     justify-content: space-around;
   }
 }
@@ -210,6 +221,7 @@
   }
 }
 .info h1 {
+  font-family: 'product_sansbold';
   font-size: 32px;
   text-align: center;
   width: 220px;
@@ -224,6 +236,7 @@
   }
 }
 .info p {
+  font-family: 'product_sanslight';
   font-size: 18px;
   text-align: center;
   width: 260px;
@@ -410,7 +423,7 @@ select {
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative;
-  z-index: -2;
+  z-index: -5;
 }
 .stacker {
   display: flex;
@@ -419,6 +432,7 @@ select {
   position: absolute;
   top: 10%;
   left: 10%;
+  z-index: 5;
 }
 @media (min-width: 900px) {
   .top {
@@ -429,6 +443,7 @@ select {
   width: 60%;
 }
 .cta-top h2 {
+  font-family: 'product_sansbold';
   font-weight: 600;
   font-size: 24px;
   text-align: left;
@@ -440,7 +455,9 @@ select {
   }
 }
 .cta-top .button {
+  display: inline-block;
   border: none;
+  z-index: 4;
 }
 .cta-top-img {
   object-fit: cover;
@@ -486,6 +503,7 @@ select {
   }
 }
 .features h3 {
+  font-family: 'product_sansregular';
   text-align: center;
   width: 60vw;
 }
@@ -514,9 +532,10 @@ select {
   }
 }
 .feature img {
-  width: 400px;
+  width: 80%;
 }
 .feature h4 {
+  font-family: 'product_sansregular';
   font-size: 1.15rem;
   text-align: center;
   margin-top: 40px;
@@ -528,6 +547,7 @@ select {
   }
 }
 .feature p {
+  font-family: 'product_sanslight';
   text-align: center;
   margin-top: 5px;
 }
@@ -558,21 +578,23 @@ select {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 450px;
+    width: 25vw;
     height: 600px;
   }
   .feature-left img {
-    width: 450px;
+    width: 25vw;
   }
   .feature-left h4 {
-    text-align: left;
-    width: 100%;
-    font-size: 32px;
-  }
-  .feature-left p {
+    font-family: 'product_sansregular';
     text-align: left;
     width: 100%;
     font-size: 24px;
+  }
+  .feature-left p {
+    font-family: 'product_sanslight';
+    text-align: left;
+    width: 100%;
+    font-size: 18px;
   }
 }
 @media (min-width: 900px) {
@@ -586,21 +608,23 @@ select {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 450px;
+    width: 25vw;
     height: 600px;
   }
   .feature-right img {
-    width: 450px;
+    width: 25vw;
   }
   .feature-right h4 {
-    text-align: left;
-    width: 100%;
-    font-size: 32px;
-  }
-  .feature-right p {
+    font-family: 'product_sansregular';
     text-align: left;
     width: 100%;
     font-size: 24px;
+  }
+  .feature-right p {
+    font-family: 'product_sanslight';
+    text-align: left;
+    width: 100%;
+    font-size: 18px;
   }
 }
 footer {
@@ -632,6 +656,9 @@ footer {
   .bottom-nav a {
     font-size: 24px;
   }
+}
+.b-link {
+  font-family: 'product_sansregular';
 }
 .social {
   display: flex;
@@ -669,6 +696,7 @@ footer {
   }
 }
 .kin {
+  font-family: 'product_sansbold';
   font-size: 1.15rem;
   text-decoration: none;
   color: black;
@@ -692,4 +720,22 @@ footer {
 }
 body {
   margin: 0;
+}
+@font-face {
+  font-family: 'product_sanslight';
+  src: url('/font/product_sans_light_300-webfont.woff2') format('woff2'), url('/font/product_sans_light_300-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'product_sansregular';
+  src: url('/font/product_sans_regular-webfont.woff2') format('woff2'), url('/font/product_sans_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'product_sansbold';
+  src: url('/font/product_sans_bold-webfont.woff2') format('woff2'), url('/font/product_sans_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
