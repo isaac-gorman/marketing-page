@@ -1,0 +1,54 @@
+.cta-top {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: -2;
+}
+
+.stacker {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.top {
+  @media @desktop {
+    margin-top: 50px;
+  }
+}
+
+.top h2 {
+  width: 60%;
+}
+
+.cta-top h2 {
+  // font-size: 1.5rem;
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+  color: white;
+  @media @desktop {
+    font-size: 36px;
+  }
+}
+
+.cta-top .button {
+  border: none;
+}
+
+.cta-top-img {
+  object-fit: cover;
+  width: 100vw;
+  height: 400px;
+  @media @desktop {
+    width: 60vw;
+    border-radius: 6px;
+  }
+}
+
+.bottom {
+  margin-top: 50px;
+}
