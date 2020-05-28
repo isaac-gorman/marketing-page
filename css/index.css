@@ -410,7 +410,7 @@ select {
   margin-top: 100px;
   margin-bottom: 100px;
   position: relative;
-  z-index: -2;
+  z-index: -5;
 }
 .stacker {
   display: flex;
@@ -419,6 +419,7 @@ select {
   position: absolute;
   top: 10%;
   left: 10%;
+  z-index: 5;
 }
 @media (min-width: 900px) {
   .top {
@@ -440,7 +441,9 @@ select {
   }
 }
 .cta-top .button {
+  display: inline-block;
   border: none;
+  z-index: 4;
 }
 .cta-top-img {
   object-fit: cover;
