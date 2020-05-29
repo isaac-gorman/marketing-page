@@ -2,3 +2,6 @@
 
 Design Files
 -> https://www.figma.com/file/O81Ip5TksgFjtnm9n77cgi/Kin-Cook-Rough-Draft?node-id=1%3A260
+
+Website
+-> https://bw1-marketing-page.now.sh/
