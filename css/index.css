@@ -172,6 +172,7 @@
   font-size: 24px;
   color: white;
   display: block;
+  font-family: 'product_sanslight';
   transition: 0.3s ease-in-out;
 }
 .menu-content a:hover {
@@ -211,9 +212,13 @@
   .hero {
     flex-direction: row-reverse;
     width: 70vw;
-    height: 50vh;
+    height: 40vh;
     justify-content: space-around;
+    margin-bottom: 80px;
   }
+}
+.hero img {
+  width: 90vw;
 }
 @media (min-width: 900px) {
   .hero img {
